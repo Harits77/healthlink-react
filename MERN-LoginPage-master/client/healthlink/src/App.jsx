@@ -4,7 +4,8 @@ import Login from './components/Login'
 import Signup from './components/Register'
 import Home from './components/Home'
 import Dashboard from './components/Dashboard'
-import Pratice from './components/Pratice'
+import Booking from './components/Booking'
+import ViewAppoint from './components/viewappoint'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
          <Route path='/login' element={<Login />}></Route>
          <Route path='/register' element={<Signup />}></Route>
          <Route path='/Dash' element={<Dashboard />}></Route>
-         <Route path='/pratice' element={<Pratice />}></Route>
+         <Route path='/Booking' element={<Booking />}></Route>
+         <Route path='/View' element={<ViewAppoint />}></Route>
       </Routes>
       </BrowserRouter>
     </>

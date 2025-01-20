@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import img1 from "../assets/images/image1.png"
+import img1 from "../assets/images/image1.png";
 
 function Dashboard() {
   const [user, setUser] = useState(null);
@@ -68,17 +68,21 @@ function Dashboard() {
               <span className="font-medium">Phone:</span> {user.number}
             </p>
             <p>
-              <span className="font-medium">Address:</span> {user.gender}
+              <span className="font-medium">Address:</span> {user.address}
             </p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
-          <button className="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition">
-            Book Appointment
-          </button>
-          <button className="bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition">
-            View Appointments
-          </button>
+          <Link to="/Booking">
+            <button className="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition">
+              Book Appointment
+            </button>
+          </Link>
+          <Link to="/View">
+            <button className="bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition">
+              View Appointments
+            </button>
+          </Link>
           <button className="bg-purple-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-purple-600 transition">
             View Prescriptions
           </button>
