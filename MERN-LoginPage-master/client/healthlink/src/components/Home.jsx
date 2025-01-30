@@ -16,7 +16,7 @@ const HomePage = () => {
               Patient Login
             </Link>
             <Link
-              to="/doctor-login"
+              to="/DoctorLogin"
               className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
             >
               Doctor Login

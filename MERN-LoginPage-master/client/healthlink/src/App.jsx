@@ -6,6 +6,9 @@ import Home from './components/Home'
 import Dashboard from './components/Dashboard'
 import Booking from './components/Booking'
 import ViewAppoint from './components/viewappoint'
+import DoctorLogin from './components/DoctorLogin'
+import ViewPrescriptions from './components/ViewPrescriptions'
+import DoctorRegister from './components/DoctorRegister'
 
 function App() {
 
@@ -19,7 +22,10 @@ function App() {
          <Route path='/register' element={<Signup />}></Route>
          <Route path='/Dash' element={<Dashboard />}></Route>
          <Route path='/Booking' element={<Booking />}></Route>
-         <Route path='/View' element={<ViewAppoint />}></Route>
+         <Route path='/View' element={<ViewAppoint />}></Route>  
+         <Route path='/prescription' element={<ViewPrescriptions />}></Route>
+         <Route path='/DoctorLogin' element={<DoctorLogin/>}></Route>
+         <Route path='/DoctorRegister' element={<DoctorRegister />}></Route>
       </Routes>
       </BrowserRouter>
     </>

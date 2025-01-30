@@ -68,7 +68,7 @@ function Dashboard() {
               <span className="font-medium">Phone:</span> {user.number}
             </p>
             <p>
-              <span className="font-medium">Address:</span> {user.address}
+              <span className="font-medium">Gender:</span> {user.gender}
             </p>
           </div>
         </div>
@@ -83,15 +83,18 @@ function Dashboard() {
               View Appointments
             </button>
           </Link>
+          <Link to="/prescription">
           <button className="bg-purple-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-purple-600 transition">
             View Prescriptions
           </button>
+          </Link>
           <button
             className="bg-red-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition"
             onClick={handleLogout}
           >
             Logout
           </button>
+        
         </div>
       </div>
     </div>
